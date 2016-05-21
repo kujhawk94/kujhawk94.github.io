@@ -1,0 +1,9 @@
+albums:
+    -   title: Phoenix and Grand Canyon
+        description: We spent a relaxing spring break in Arizona
+        url: http://photos.brull.me/Travel/2016-Phoenix-and-Grand-Canyon/
+        date: 2016-03-17
+    -   title: Easter
+        description: Our annual family dinner at Mom and Dad's house
+        url: http://photos.brull.me/Holidays/2016-Easter/
+        date: 2016-03-27     
