@@ -1,0 +1,15 @@
+---
+layout: page
+title: Photos
+permalink: /photos/
+---
+
+
+<ul>
+{% assign albums = site.data.photoalbums.albumlist | sort: "date" %}
+{% for album in albums reversed %}
+    <li>
+        <a href="{{ album.url }}">{{ album.title }}</a>: {{ album.description }}
+    </li>
+{% endfor %}
+</ul>

@@ -1,4 +1,4 @@
-albums:
+albumlist:
     -   title: Phoenix and Grand Canyon
         description: We spent a relaxing spring break in Arizona
         url: http://photos.brull.me/Travel/2016-Phoenix-and-Grand-Canyon/
@@ -6,4 +6,28 @@ albums:
     -   title: Easter
         description: Our annual family dinner at Mom and Dad's house
         url: http://photos.brull.me/Holidays/2016-Easter/
-        date: 2016-03-27     
+        date: 2016-03-27
+    -   title: Kentucky
+        description: Five day road trip to visit Kentucky bourbon distilleries
+        url: http://photos.brull.me/Travel/2015-Kentucky/
+        date:  2015-07-03
+    -   title: The Man Who Came To Dinner
+        description: TMP-M's 2016 spring play with Paul as Banjo
+        url: http://photos.brull.me/Theater/2016-The-Man-Who-Came-to/
+        date:  2016-04-15
+    -   title: Jenna's First Communion
+        description: My niece celebrated her first communion on April 10
+        url: http://photos.brull.me/Kids/2016-Jennas-First-Communion
+        date:  2016-04-10
+    -   title:  2014 Snapshots
+        description:  Miscellaneous photos from the year 2014
+        url:  http://photos.brull.me/Snapshots/2014-Snapshots/
+        date:  2014-12-31
+    -   title:  Jenna's 7th birthday
+        description:  In which Jenna has a party for her seventh birthday
+        date:  2014-07-26
+        url:  http://photos.brull.me/Kids/2014-Jennas-birthday/
+    -   title:  San Diego trip
+        description:  Our four-night stay on Coronado Island in the summer of 2014
+        url:  http://photos.brull.me/Travel/2014-San-Diego-vacation
+        date:  2014-08-03

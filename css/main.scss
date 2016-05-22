@@ -6,12 +6,13 @@
 
 
 // Our variables
-$base-font-family: "Lucida Console", “Courier New”, monospace;
+$base-font-family: monospace;
 $base-font-size:   14px;
 $small-font-size:  $base-font-size * 0.875;
+$title-font-size:  $base-font-size * 1.25;
 $base-line-height: 1.25;
 
-$spacing-unit:     30px;
+$spacing-unit:     15px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;

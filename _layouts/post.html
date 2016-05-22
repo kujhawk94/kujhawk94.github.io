@@ -13,3 +13,9 @@ layout: default
   </article>
 
 </div>
+
+  <div class="post-nav">
+      {% if page.previous %}<a href="{{ page.previous.url }}" alt="Previous post">&larr;Prev</a>{% endif %}
+      <a href="{{ site.baseurl }}/" alt="All posts">&uarr;Up</a>
+      {% if page.next %}<a href="{{ page.next.url }}" alt="Next post">Next&rarr;</a>{% endif %}
+  </div>

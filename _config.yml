@@ -11,3 +11,12 @@ github_username: kujhawk94
 
 # Build settings
 markdown: kramdown 
+
+# Other
+gems:
+    - jekyll-redirect-from
+
+whitelist:
+    - jekyll-redirect-from
+
+safe: true

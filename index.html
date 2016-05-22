@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:4 %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -16,6 +16,12 @@ layout: default
         </h2>
         {{ post.excerpt }}
       </li>
+    {% endfor %}
+  </ul>
+  <h1 class="page-heading">Older posts</h1>
+  <ul class="post-meta">
+    {% for post in site.posts offset:4 %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 

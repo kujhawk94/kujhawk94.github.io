@@ -1,25 +1,21 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-09-01 20:11:06
-categories: jekyll update
+title:  "Website reboot"
+date:   2016-05-22
+categories: meta
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Same old material moved to [jekyll][1] static site generator.
 
-Jekyll also offers powerful support for code snippets:
+Time to reminisce with the wayback machine (sadly, not all of the images are archived):
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+* [1995][3]: I've been doing the post a form, query the data, return a file for a long time now.
+* [1997][2]: As I recall this included a fabulous background image.  Also, I have looked more than once through various backup folders for the "Snokomo chasing his tail" move.  That two second clip took up an enormous amout of disk space at the time.
+* [1997][4]: The spiffy personal information page I constructed while working at KUMC.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
+Kind of sad there aren't more...time to rummage through some old backup cd's lying around the house.
 
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+[1]:http://jekyllrb.com
+[2]:https://web.archive.org/web/19970208044220/http://kuspa1.phsx.ukans.edu:8000/~brull/index.html 
+[3]:https://web.archive.org/web/19960510134059/http://kuspa1.phsx.ukans.edu:8000/~brull/rateplots/rateplot.html
+[4]:https://web.archive.org/web/19970606050338/http://www.kumc.edu/people/C/cbrull/home.html
