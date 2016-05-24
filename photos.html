@@ -4,10 +4,18 @@ title: Photos
 permalink: /photos/
 ---
 
-
-<ul>
+{% assign currentyear = 0 %}
 {% assign albums = site.data.photoalbums.albumlist | sort: "date" %}
 {% for album in albums reversed %}
+    {% capture year %}{{ album.date | date: "%Y" }}{% endcapture %}
+    {% if year != currentyear %}
+        {% if currentyear != 0 %}
+          </ul>
+        {% endif %}
+        <h2>{{ year }}</h2>
+        <ul>
+        {% assign currentyear = year %}
+    {% endif %}
     <li>
         <a href="{{ album.url }}">{{ album.title }}</a>: {{ album.description }}
     </li>
