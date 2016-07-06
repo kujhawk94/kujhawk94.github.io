@@ -12,6 +12,6 @@ View the photos: [2014][1], [2013][2], [2012][3], [2011][4], [2010][5], [2009][6
 [1]:http://photos.brull.me/Holidays/Fourth-of-July-2014/
 [2]:http://photos.brull.me/Holidays/Fourth-of-July-2013/
 [3]:http://photos.brull.me/Holidays/2012-Fourth-of-July/
-[4]:http://photos.brull.me/organize/Holidays/Fourth-of-july-2011
+[4]:http://photos.brull.me/Holidays/Fourth-of-july-2011
 [5]:https://www.flickr.com/photos/brull/sets/72157624306472937/
 [6]:https://www.flickr.com/photos/brull/sets/72157621078382236/
