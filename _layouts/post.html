@@ -12,6 +12,8 @@ layout: default
     {{ content }}
   </article>
 
+  {% if page.last_modified %}<p class="post-meta">Last modified:  {{ page.last_modified | date: "%b %-d, %Y" }}</p>{% endif %}
+
 </div>
 
   <div class="post-nav">
