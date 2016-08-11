@@ -24,7 +24,7 @@ PORT    STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 3.19 seconds
 ```
 
-Additional nmap sites:
+Additional nmap sites: 
 
 - [Top 30 Nmap Command Examples for Sys/Network Admins][1]
 
