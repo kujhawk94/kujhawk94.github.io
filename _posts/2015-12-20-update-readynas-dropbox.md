@@ -3,7 +3,7 @@ layout: post
 title: "Update ReadyNAS dropbox installation"
 date: 2015-12-20
 last_modified: 2016-08-11
-categories:  dropbox, readynas
+categories:  dropbox readynas
 ---
 
 Use su to become the user who is running dropbox and download/install the newest version.

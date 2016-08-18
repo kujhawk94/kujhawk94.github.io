@@ -2,7 +2,7 @@
 layout: post
 title:  Configure postfix to use Fastmail smtp
 date: 2016-08-16
-categories: postfix, debian, fastmail
+categories: postfix debian fastmail
 ---
 
 [Fastmail][5] provides outgoing [smtp services][3] to its users via an [app-specific password][4].  Postfix configuration can be set to use Fastmail's servers for smtp with correct authentication headers (dkim, dmarc, spf).  Before starting the postfix configuration, follow Fastmail's directions for creating an [app-specific password][4].
