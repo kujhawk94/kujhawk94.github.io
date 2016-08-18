@@ -2,7 +2,7 @@
 layout: post
 title:  Simple port scan
 date:   2015-08-27
-categories:  nmap, network
+categories:  nmap network
 ---
 Periodically, I will read something that makes me want to check open ports on this or that server in order to sleep better at night.  I use nmap infrequently and always forget how easy it is to quickly run a port scan on a server.
 
