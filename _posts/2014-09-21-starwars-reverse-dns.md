@@ -8,9 +8,9 @@ My first exposure to this was via a FB post from [Tony Gabel][1].  A bit of [Co
 
 NB: A similar technique can be used starting at obiwan.scrye.net  RR
 
-{% highlight bash %}
+```shell
 ( seq 1 8 200 ; seq 6 8 200 ) | sort -n | xargs -I{} -n 1 dig +short -x 206.214.251.{}
-{% endhighlight %}
+```
 
 [1]:http://www.fhsu.edu/management/gabel/
 [2]:https://twitter.com/climagic/status/513705570923466752

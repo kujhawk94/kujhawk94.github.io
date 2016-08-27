@@ -8,14 +8,14 @@ categories:  dropbox readynas
 
 Use su to become the user who is running dropbox and download/install the newest version.
 
-```
+```bash
 su -s /bin/bash username
 cd ~ && wget --no-check-certificate -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
 ```
 
 Then you can check the daemon using
 
-```
+```bash
 ~/.dropbox-dist/dropboxd
 ```
 
