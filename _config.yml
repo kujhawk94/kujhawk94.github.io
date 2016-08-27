@@ -11,6 +11,11 @@ github_username: kujhawk94
 
 # Build settings
 markdown: kramdown 
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: false
 
 # Other
 gems:
