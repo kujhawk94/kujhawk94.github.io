@@ -2,6 +2,7 @@
 layout: post
 title: ReadyNAS stuck Frontview
 date: 2016-02-10
+categories: frontview readynas stuck
 ---
 Periodically apache crashes and won't start due to an out of space error related to mod_rewrite.  The following command frees the stuck resources and allows apache to be restarted.
 
