@@ -2,6 +2,7 @@
 layout: post
 title:  Configure postfix to use Fastmail smtp
 date: 2016-08-16
+last_modified:  2016-12-26
 categories: postfix debian fastmail
 ---
 
@@ -42,7 +43,7 @@ And tell postfix about the password entry
 $ sudo postmap /etc/postfix/sasl_passwd
 ```
 
-Make a copy of the certificate for postfix.  If the certificate is not installed, download the file directly from [Thawte's Root Certificates page][7] ([Thawte Primary Root CA][6]). _Thanks to [Jim Kalafut][8] for noting the Thawte certificate may not be installed._
+Make a copy of the certificate for postfix if it was installed with the ca-certificates.  If the certificate is not in `/etc/ssl/certs`, download the certificate directly from [Thawte's Root Certificates page][7] ([Thawte Primary Root CA][6]). _Thanks to [Jim Kalafut][8] for noting the Thawte certificate may not be installed._
 
 ```
 $ sudo cp /etc/ssl/certs/Thawte_Premium_Server_CA.pem /etc/postfix/cacert.pem
