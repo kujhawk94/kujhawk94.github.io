@@ -33,16 +33,16 @@ The password is stored in the file `/etc/postfix/sasl_passwd` with the following
 Fix the permissions
 
 ```
-$ sudo chmod 400 /etc/postfix/sasl_password
+$ sudo chmod 400 /etc/postfix/sasl_passwd
 ```
 
 And tell postfix about the password entry
 
 ```
-$ sudo postmap /etc/postfix/sasl_password
+$ sudo postmap /etc/postfix/sasl_passwd
 ```
 
-Make a copy of the certificate for postfix
+Make a copy of the certificate for postfix.  If the certificate is not installed, download the file directly from [Thawte's Root Certificates page][7] ([Thawte Primary Root CA][6]). _Thanks to [Jim Kalafut][8] for noting the Thawte certificate may not be installed._
 
 ```
 $ sudo cp /etc/ssl/certs/Thawte_Premium_Server_CA.pem /etc/postfix/cacert.pem
@@ -68,3 +68,9 @@ $ echo "Test mail from postfix" | mail -s "Test Postfix" you@example.com
 [3]: https://www.fastmail.com/help/technical/servernamesandports.html#email
 [4]: https://www.fastmail.com/help/clients/apppassword.html
 [5]: http://www.fastmail.com
+[6]: https://www.thawte.com/roots/thawte_Primary_Root_CA.pem 
+[7]: https://www.thawte.com/roots/
+[8]: https://kalafut.net
+
+
+[^1]: 
