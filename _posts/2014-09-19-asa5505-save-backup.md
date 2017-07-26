@@ -2,11 +2,24 @@
 layout: post
 title:  "ASA 5505 - Save backup of running configuration file via tftp"
 date:   2014-09-19
+last_modified:  2017-07-26
 categories: cisco
 redirect_from: "/archives/173"
 ---
 
-Before running an upgrade to the ASA operating system, I wanted to make a backup of the current running configuration in case of catastrophe.  Ideally, that backup would exist somewhere not on the ASA device itself which involves getting something like *write net* to work.  Fortunately, the process is not difficult but posting a few notes will hoepfully save me from reinventing the wheel in a couple of years when I need to do this again.  These steps are based on the [a page from Dario Garavini](http://www.dariogaravini.com/update-cisco-ios-tftp-os-x-mavericks/) and the [Cisco support site](http://www.cisco.com/c/en/us/support/docs/security/pix-500-series-security-appliances/70771-backup-restore-pix-configure.html).
+Before running an upgrade to the ASA operating system, I wanted to make a backup of the current running configuration in case of catastrophe.  Ideally, that backup would exist somewhere not on the ASA device itself which involves getting something like *write net* to work.  Fortunately, the process is not difficult but posting a few notes will hopefully save me from reinventing the wheel in a couple of years when I need to do this again.  These steps are based on the [a page from Dario Garavini](http://www.dariogaravini.com/update-cisco-ios-tftp-os-x-mavericks/) and the [Cisco support site](http://www.cisco.com/c/en/us/support/docs/security/pix-500-series-security-appliances/70771-backup-restore-pix-configure.html).
+
+## Update with information regarding tftpd on debian
+*2017-07-26*  A few more notes which would have saved me ten or fifteen minutes today when attempting the same operation with a debian tftpd server.  First installation is simple enough with
+```
+$ sudo apt-get install tftpd 
+```
+By default, tftpd is configured in `/etc/inetd.conf` to use the directory `/srv/tftp`.  But that directory is not created during installation.  If necessary to restart `inetd`, [the command is](http://imranasghar.blogspot.com/2008/09/how-to-setup-tftp-server-on-debian.html)
+```
+$ sudo /etc/init.d/openbsd-inetd restart
+```
+
+Implied in the text below but not explicitly stated is before any file can be saved to the via `tftp` a corresponding filename needs to already exist on the server.  The `tftp-server` command below sets the filename to `asaconfig` so a simple `touch asaconfig` in `/srv/tftp` will prepare the server for the incoming file.  Failure to execute something like the touch command will result in the following:  *Error code 2: Access violation*
 
 ## Mac OS X TFTP
 
