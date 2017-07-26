@@ -9,8 +9,8 @@ redirect_from: "/archives/173"
 
 Before running an upgrade to the ASA operating system, I wanted to make a backup of the current running configuration in case of catastrophe.  Ideally, that backup would exist somewhere not on the ASA device itself which involves getting something like *write net* to work.  Fortunately, the process is not difficult but posting a few notes will hopefully save me from reinventing the wheel in a couple of years when I need to do this again.  These steps are based on the [a page from Dario Garavini](http://www.dariogaravini.com/update-cisco-ios-tftp-os-x-mavericks/) and the [Cisco support site](http://www.cisco.com/c/en/us/support/docs/security/pix-500-series-security-appliances/70771-backup-restore-pix-configure.html).
 
-## Update with information regarding tftpd on debian
-*2017-07-26*  A few more notes which would have saved me ten or fifteen minutes today when attempting the same operation with a debian tftpd server.  First installation is simple enough with
+## Information regarding tftpd on debian (2017-07-26)
+A few more notes which would have saved me ten or fifteen minutes today when attempting the same operation with a debian tftpd server.  First installation is simple enough with
 ```
 $ sudo apt-get install tftpd 
 ```
