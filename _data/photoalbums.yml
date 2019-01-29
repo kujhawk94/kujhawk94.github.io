@@ -95,3 +95,12 @@ albumlist:
         description: Paul performend in the singers' annual show
         date: 2017-02-04
         url: http://photos.brull.me/School/TMP-M/2017-Pop-singers-dinner-show/
+    -   title: Oklahoma! (Nov 2 performance)
+        description: Photos from TMP-M fall musical production of Oklahoma!
+        date: 2018-11-02
+        url: https://photos.brull.me/Theater/2018-11-02-Oklahoma/
+    -   title: Oklahoma! (Nov 3 performance)
+        description: More photos from TMP-M fall musical production of Oklahoma!
+        date: 2018-11-03
+        url: https://photos.brull.me/Theater/2018-11-03-Oklahoma/
+    
