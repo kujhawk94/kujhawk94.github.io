@@ -2,7 +2,7 @@
 layout: post
 title:  Configure postfix to use Fastmail smtp
 date: 2016-08-16
-last_modified:  2016-12-26
+last_modified:  2021-03-22
 categories: postfix debian fastmail
 ---
 
