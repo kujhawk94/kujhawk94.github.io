@@ -6,7 +6,7 @@ last_modified:  2016-12-26
 categories: postfix debian fastmail
 ---
 
-[Fastmail][5] provides outgoing [smtp services][3] to its users via an [app-specific password][4].  Postfix configuration can be set to use Fastmail's servers for smtp with correct authentication headers (dkim, dmarc, spf).  Before starting the postfix configuration, follow Fastmail's directions for creating an [app-specific password][4].
+[Fastmail][5] provides outgoing [smtp services][3] to its users via an [app-specific password][4].  Postfix configuration can be set to use Fastmail's servers for smtp with correct authentication headers (dkim, dmarc, spf).  Before starting the postfix configuration, follow Fastmail's directions for creating an [app-specific password][4].  _Tim Wild noted preparation for the postfix configuration may also require [setting the server host name][9]._
 
 Install `postfix` and associated packages for securing the connection.  Select *Internet Site* during installation and set an appropriate FQDN.
 
@@ -72,6 +72,7 @@ $ echo "Test mail from postfix" | mail -s "Test Postfix" you@example.com
 [6]: https://www.thawte.com/roots/thawte_Primary_Root_CA.pem 
 [7]: https://www.thawte.com/roots/
 [8]: https://kalafut.net
+[9]: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
 
 
 [^1]: 
