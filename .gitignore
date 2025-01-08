@@ -1,3 +1,6 @@
 _site
 .sass-cache
 www.brull.bbprojectd
+.DS_Store
+Gemfile*
+.wdnote
